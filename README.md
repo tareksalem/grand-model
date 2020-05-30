@@ -1,11 +1,33 @@
 <p align="center"><img width="200" height="200" src="https://i.ibb.co/t4MDdkq/grandjs.png" alt="Grandjs logo"></p>
 
 
-#Grand Model
+# Grand Model
 
 
 ## Content
-
+- [Grand Model](#grand-model)
+  - [Content](#content)
+  - [About](#about)
+  - [Features](#features)
+  - [Prerequisites](#prerequisites)
+  - [Installing](#installing)
+  - [Dependencies](#dependencies)
+  - [Building Model](#building-model)
+  - [Define New Model](#define-new-model)
+  - [Define a new property inside your model](#define-a-new-property-inside-your-model)
+    - [Settings](#settings)
+    - [Property](#property)
+    - [Method](#method)
+    - [Data Types](#data-types)
+      - [String](#string)
+      - [Number](#number)
+      - [ObjectId](#objectid)
+      - [Object](#object)
+      - [Array](#array)
+    - [Add Model inside another Model](#add-model-inside-another-model)
+      - [How can I use Model inside another Model ?](#how-can-i-use-model-inside-another-model-)
+    - [Instantiate Model](#instantiate-model)
+    - [Validate Model](#validate-model)
 ## About
 Grand Schema is a javascript package for building  models for your data using typescript, it's available for either frontend or backend developement, it also can be used to validate your models, it's so good to be used in frontend to describe your data how they will be, also it's good for backend if you want to build a project in repository pattern and cleand archeticture.
 
