@@ -28,6 +28,7 @@
       - [How can I use Model inside another Model ?](#how-can-i-use-model-inside-another-model-)
     - [Instantiate Model](#instantiate-model)
     - [Validate Model](#validate-model)
+    - [Access Schema Object](#access-schema-object)
 ## About
 Grand Schema is a javascript package for building  models for your data using typescript, it's available for either frontend or backend developement, it also can be used to validate your models, it's so good to be used in frontend to describe your data how they will be, also it's good for backend if you want to build a project in repository pattern and cleand archeticture.
 
@@ -315,3 +316,33 @@ This array contains objects, each object contains the following:
 |valueType|string|the data type that this property should be based on the defined schema|
 |currentValueType|string|the current value of the property|
 
+
+### Access Schema Object
+to Access the Schema Object of the model you can access on it by accessing a property called `Schema`
+
+**Example**
+
+```typescript
+@settings()
+class User extends Entity{
+    @property({required: true, type: String})
+    name:string
+}
+const user = new User({name: "tarek"})
+
+// access on the schema
+console.log(user.Schema);
+```
+
+you can also access on it from the class itself as the following:
+
+```typescript
+@settings()
+class User extends Entity{
+    @property({required: true, type: String})
+    name:string
+}
+
+// access on the schema
+console.log(User.prototype.Schema);
+```
