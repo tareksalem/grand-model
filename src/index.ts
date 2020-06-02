@@ -43,6 +43,8 @@ abstract class Entity{
     }
     constructor(data:OptionalObject = {}) {
         this.data = data;
+        this.Schema = this.Schema || {};
+        this.properties = this.properties || [];
         this.properties.map((key) => {
             this[key] = data[key];
         })
